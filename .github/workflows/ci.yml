@@ -20,5 +20,8 @@ jobs:
     - name: Install the latest version of uv
       uses: astral-sh/setup-uv@v6
 
+    - name: Install splinart locally
+      run: uv pip install -e .
+
     - name: Run tests
       run: uv run pytest tests
