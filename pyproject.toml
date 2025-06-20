@@ -37,7 +37,12 @@ classifiers = [
     'Operating System :: MacOS',
 ]
 
-dependencies = ["numpy", "matplotlib"]
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "pytest>=8.3.5",
+    "pre-commit>=3.5.0",
+]
 
 [project.optional-dependencies]
 dev = [
@@ -69,6 +74,7 @@ markers = [
     "long: marks tests as long (deselect with '-m \"not long\"')",
     "serial",
 ]
+# pythonpath = ["."]
 
 [tool.ruff]
 exclude = ["doc/conf.py", "tests"]
