@@ -6,6 +6,12 @@ build-backend = "setuptools.build_meta"
 name = "splinart"
 dynamic = ["version"]
 requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "pytest>=8.3.5",
+    "pre-commit>=3.5.0",
+]
 
 license = { file = "LICENSE" }
 
@@ -35,13 +41,6 @@ classifiers = [
     'Operating System :: POSIX',
     'Operating System :: Unix',
     'Operating System :: MacOS',
-]
-
-dependencies = [
-    "numpy",
-    "matplotlib",
-    "pytest>=8.3.5",
-    "pre-commit>=3.5.0",
 ]
 
 [project.optional-dependencies]
