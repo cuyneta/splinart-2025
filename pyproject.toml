@@ -3,14 +3,14 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "splinart"
+name = "splinart-2025"
 dynamic = ["version"]
 requires-python = ">=3.8"
 
 license = { file = "LICENSE" }
 
 description = "spline art generator"
-authors = [{ name = "Loic Gouarin", email = "loic.gouarin@gmail.com" }]
+authors = [{ name = "AC", email = "bla@gmail.com" }]
 readme = "readme.rst"
 
 classifiers = [
@@ -60,7 +60,7 @@ dev = [
 splinart = "splinart.scripts.cli_splinart:main"
 
 [project.urls]
-Source = "https://github.com/gouarin/splinart"
+Source = "https://github.com/cuyneta/splinart-2025"
 Documentation = "https://splinart.readthedocs.io"
 
 [tool.setuptools.dynamic]
