@@ -1,0 +1,30 @@
+name: ci
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+
+    - name: Install the latest version of uv
+      uses: astral-sh/setup-uv@v6
+
+    - name: sync env
+      run: uv sync
+
+    - name: Install splinart locally
+      run: uv pip install -e .
+
+    - name: Run tests
+      run: uv run pytest tests
